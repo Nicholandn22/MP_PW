@@ -47,7 +47,7 @@ ul img {
 .navigation #kanan ul {
   list-style: none;
   padding-top: 30px;
-  margin: 0 600px;
+  margin: 0 630px;
   width: max-content;
   display: flex;
   justify-content: center;
@@ -115,8 +115,8 @@ ul img {
 .containerBox button {
   /* Variables */
   --button_radius: 0.75em;
-  --button_color: #e8e8e8;
-  --button_outline_color: #000000;
+  --button_color: #242565;
+  --button_outline_color: #fff;
   font-size: 17px;
   margin-top: 20px;
   font-weight: bold;
