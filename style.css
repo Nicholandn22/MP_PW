@@ -1,0 +1,505 @@
+/* Header */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Poppins;
+}
+header {
+  height: 750px;
+  width: 100%;
+  background-image: url(/drive-download-20240310T064708Z-001/Banner_Prambanan_Jazz.webp);
+  background-size: 100%;
+  /* opacity: 50%; */
+  filter: sepia(0.7);
+}
+.navigation {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  padding-top: 10px;
+  /* text-align: end; */
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+}
+#judul {
+  width: 50px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#judul img {
+  width: 50px;
+  display: inline;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#judul h1 {
+  width: 50px;
+  display: inline;
+  color: #242565;
+}
+
+.navigation #kanan ul {
+  list-style: none;
+  padding-top: 30px;
+  margin: 0 800px;
+  width: max-content;
+  font-weight: bold;
+}
+
+.navigation #kanan ul a {
+  text-decoration: none;
+  color: #242565;
+  padding-top: 0px;
+  font-size: 20px;
+  display: inline;
+  margin-right: 15px;
+}
+
+.navigation #kanan ul a:hover {
+  color: rgb(131, 131, 131);
+  /* INI MW D BNERIN */
+}
+/* #WELCOME {
+  margin-top: 300px;
+  text-align: center;
+  color: #242565;
+  font-size: 60px;
+} */
+/* /* Header */
+
+main .container {
+  width: 80%;
+  height: max-content;
+  background-color: #242565;
+  margin: 10px auto;
+  display: flex;
+}
+
+main .container .box1,
+.box2,
+.box3 p {
+  color: white;
+}
+
+main .container .box1 {
+  flex: 1; /* Makes each child element take up 1/4 of the space */
+  text-align: center; /* Optional styling for boxes */
+}
+
+main .container .box2 {
+  flex: 2; /* Makes each child element take up 1/4 of the space */
+  text-align: center; /* Optional styling for boxes */
+}
+main .container .box3 {
+  flex: 1; /* Makes each child element take up 1/4 of the space */
+  text-align: center; /* Optional styling for boxes */
+}
+/* tombol search */
+.btn-search:link,
+.btn-search:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #242565;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  width: 100px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 18px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.btn-search:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, 0.5);
+}
+
+.btn-search:active {
+  transform: translateY(-3px);
+}
+
+.btn-search::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn-search:hover::after {
+  background-color: rgb(0, 238, 255);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+/* tombol search */
+#my-input {
+  width: 300px;
+  height: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#my-date {
+  width: 300px;
+  height: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+main .container .search img {
+  height: 100%;
+}
+
+#my-input {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid #ccc;
+  width: 70%;
+  text-decoration: none;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+  color: white;
+}
+
+#my-input::-webkit-input-placeholder {
+  color: white;
+}
+
+#my-input:-moz-placeholder {
+  color: white;
+}
+
+#my-input::-moz-placeholder-color {
+  color: white;
+}
+
+#my-input:-ms-input-placeholder {
+  color: white;
+}
+
+.container-ft {
+  width: 500px;
+  margin: 50px 200px;
+  text-align: left;
+}
+/* Dropdown Menus */
+.dropdown-menus {
+  display: flex;
+  width: fit-content;
+  margin: 40px;
+}
+
+.dropdown-menus :nth-child(2) {
+  margin-left: 15px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  background-color: #f2f4ff;
+  color: #1d275f;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: fit-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* Tautan Dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+
+/* Tautan Dropdown Saat Diarahkan */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tampilkan Dropdown Menu Saat Diarahkan */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tulisan h1 {
+  text-align: left;
+  margin-left: 250px;
+  display: inline;
+}
+
+/* .tulisan a {
+  margin-left: 28%;
+  display: inline;
+} */
+
+.readmore-btn {
+  width: fit-contentd;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #242565;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 15px;
+  gap: 0px;
+  transition: all 0.4s;
+  margin-left: 73%;
+}
+.book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 45px;
+  height: 100%;
+}
+.book-wrapper .book-page {
+  width: 50%;
+  height: auto;
+  position: absolute;
+}
+.readmore-btn:hover .book-page {
+  animation: paging 0.4s linear infinite;
+  transform-origin: left;
+}
+.readmore-btn:hover {
+  background-color: #394989;
+}
+@keyframes paging {
+  0% {
+    transform: rotateY(0deg) skewY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg) skewY(-20deg);
+  }
+  100% {
+    transform: rotateY(180deg) skewY(0deg);
+  }
+}
+.text {
+  width: 105px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.box {
+  width: 370px;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px rgb(182, 182, 182);
+  border-radius: 10px;
+
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.box .dalam {
+  padding: 20px;
+}
+
+.box h2 {
+  color: #394989;
+  font-weight: bolder;
+}
+.box img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+.box h3 {
+  margin-top: 10px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.box h3 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.box h4 {
+  margin-top: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+.box h5 {
+  font-size: 10px;
+  text-align: justify;
+}
+.box p {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: left;
+  font-style: italic;
+}
+
+.box a {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 7px;
+  background-color: #3b2e5a;
+  color: whitesmoke;
+}
+
+.box a:hover {
+  background-color: #ccc;
+}
+
+/* footer */
+.containft {
+  width: 100%;
+  height: 450px;
+  background-color: #242565;
+  padding: 20px 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.abtus {
+  margin-top: 20px;
+}
+
+.abtus img {
+  width: 30px;
+  height: 30px;
+}
+
+.abtus h1 {
+  display: inline;
+  color: white;
+}
+
+.abtus p {
+  width: 30%;
+  margin: 10px auto;
+  color: white;
+  font-size: 25 px;
+}
+
+/* button sosmed */
+.parent {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: white;
+}
+
+.child:hover {
+  background-color: #242565;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+footer button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  background-color: white;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg)
+    translateY(2px);
+  border-radius: 50%;
+}
+/* button sosmed */
+
+hr {
+  width: 80%;
+  /* color: red; */
+}
+
+footer a,
+#copyright {
+  margin: 0;
+  color: white;
+}
+
+#plgbwh {
+  /* position: absolute; */
+  margin-top: 9%;
+  text-align: center;
+  padding: 10px;
+  /* background-color: #ccc; */
+  bottom: 1;
+}
+
+/* footer */
